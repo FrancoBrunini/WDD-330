@@ -23,5 +23,26 @@ export default class ProductDetails {
   }
 
   renderProductDetails() {
-  }
+  document.querySelector(".product-detail h3").textContent =
+    this.product.Brand.Name;
+
+  document.querySelector(".product-detail h2").textContent =
+    this.product.NameWithoutBrand;
+
+  const image = document.querySelector(".product-detail img");
+  image.src = this.product.Image;
+  image.alt = this.product.Name;
+
+  document.querySelector(".product-card__price").textContent =
+    `$${this.product.FinalPrice}`;
+
+  document.querySelector(".product__color").textContent =
+    this.product.Colors[0].ColorName;
+
+  document.querySelector(".product__description").innerHTML =
+    this.product.DescriptionHtmlSimple;
+
+  document.querySelector("#addToCart").dataset.id =
+    this.product.Id;
+}
 }
