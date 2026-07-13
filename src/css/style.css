@@ -261,3 +261,40 @@ footer {
   font-size: var(--small-font);
   padding: 1em;
 }
+
+
+.product-card {
+  position: relative; 
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #d9534f; 
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  z-index: 10;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 6px;
+  font-size: 0.9em;
+}
+
+.discount-price {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.savings-amount {
+  display: block;
+  font-size: 0.8em;
+  color: #2e7d32; 
+  font-weight: 600;
+}
