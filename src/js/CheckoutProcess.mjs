@@ -1,4 +1,28 @@
+JavaScript
 import { getLocalStorage } from "./utils.mjs";
+import ExternalServices from "./ExternalServices.mjs";
+
+const services = new ExternalServices();
+
+function packageItems(items) {
+  return items.map((item) => ({
+    id: item.Id,
+    name: item.Name,
+    price: item.FinalPrice,
+    quantity: item.Quantity || 1,
+  }));
+}
+
+function formDataToJSON(formElement) {
+  const formData = new FormData(formElement);
+  const convertedJSON = {};
+
+  formData.forEach((value, key) => {
+    convertedJSON[key] = value;
+  });
+
+  return convertedJSON;
+}
 
 export default class CheckoutProcess {
   constructor(key, outputSelector) {
@@ -61,5 +85,26 @@ export default class CheckoutProcess {
     if (taxEl) taxEl.innerText = `$${this.tax.toFixed(2)}`;
     if (shippingEl) shippingEl.innerText = `$${this.shipping.toFixed(2)}`;
     if (orderTotalEl) orderTotalEl.innerText = `$${this.orderTotal.toFixed(2)}`;
+  }
+
+  async checkout(form) {
+    const orderJSON = formDataToJSON(form);
+
+    orderJSON.orderDate = new Date().toISOString();
+    orderJSON.items = packageItems(this.list);
+    orderJSON.itemTotal = this.itemTotal.toFixed(2);
+    orderJSON.shipping = this.shipping;
+    orderJSON.tax = this.tax.toFixed(2);
+    orderJSON.orderTotal = this.orderTotal.toFixed(2);
+
+    console.log("Objeto enviado al servidor:", orderJSON);
+
+    try {
+      const res = await services.checkout(orderJSON);
+      console.log("Respuesta del servidor:", res);
+      alert("¡Orden enviada con éxito!");
+    } catch (err) {
+      console.error("Error al procesar la orden:", err);
+    }
   }
 }

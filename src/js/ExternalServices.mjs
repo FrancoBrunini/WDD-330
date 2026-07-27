@@ -1,18 +1,16 @@
-// 1. Importamos la URL base desde las variables de entorno (.env)
 const baseURL = import.meta.env.VITE_SERVER_URL;
 
-// Función aux para convertir la respuesta a JSON y manejar errores
-function convertToJson(res) {
+async function convertToJson(res) {
+  const data = await res.json();
   if (res.ok) {
-    return res.json();
+    return data;
   } else {
-    throw new Error("Bad Response");
+    throw { name: "servicesError", message: data };
   }
 }
 
 export default class ExternalServices {
-  constructor() {
-  }
+  constructor() {}
 
   async getData(category) {
     const response = await fetch(`${baseURL}products/search/${category}`);
@@ -25,23 +23,6 @@ export default class ExternalServices {
     const data = await convertToJson(response);
     return data.Result;
   }
-}
-
-const baseURL = "https://wdd330-backend.onrender.com/";
-
-async function convertToJson(res) {
-  const data = await res.json();
-  if (res.ok) {
-    return data;
-  } else {
-    throw { name: "servicesError", message: data };
-  }
-}
-
-export default class ExternalServices {
-  constructor() {
-  }
-
 
   async checkout(payload) {
     const options = {

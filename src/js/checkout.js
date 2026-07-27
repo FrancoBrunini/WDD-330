@@ -3,11 +3,17 @@ import CheckoutProcess from "./CheckoutProcess.mjs";
 
 loadHeaderFooter();
 
+const checkout = new CheckoutProcess("so-cart", ".order-summary");
+checkout.init();
 
-
-const myCheckout = new CheckoutProcess("so-cart", ".order-summary");
 document.querySelector("#zip").addEventListener("blur", () => {
-  myCheckout.calculateOrderTotal();
+  checkout.calculateOrderTotal();
 });
 
-myCheckout.init();
+document.querySelector("#checkout-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  
+  checkout.calculateOrderTotal();
+  
+  checkout.checkout(e.target);
+});

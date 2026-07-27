@@ -30,7 +30,14 @@ export default class ProductDetails {
       cartItems = cartItems ? [cartItems] : [];
     }
 
-    cartItems.push(this.product);
+    const existingIndex = cartItems.findIndex((item) => item.Id === this.product.Id);
+
+    if (existingIndex > -1) {
+      cartItems[existingIndex].Quantity = (cartItems[existingIndex].Quantity || 1) + 1;
+    } else {
+      this.product.Quantity = 1;
+      cartItems.push(this.product);
+    }
 
     setLocalStorage("so-cart", cartItems);
 

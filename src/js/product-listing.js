@@ -7,7 +7,7 @@ loadHeaderFooter();
 const category = getParam('category');
 const dataSource = new ExternalServices();
 const listElement = document.querySelector('.product-list');
-const myList = new ExternalServices(category, dataSource, listElement);
+const myList = new ProductList(category, dataSource, listElement);
 myList.init();
 if (category) {
     const formattedCategory = category
