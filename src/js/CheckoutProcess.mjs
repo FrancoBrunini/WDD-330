@@ -1,4 +1,3 @@
-JavaScript
 import { getLocalStorage } from "./utils.mjs";
 import ExternalServices from "./ExternalServices.mjs";
 
@@ -97,14 +96,48 @@ export default class CheckoutProcess {
     orderJSON.tax = this.tax.toFixed(2);
     orderJSON.orderTotal = this.orderTotal.toFixed(2);
 
-    console.log("Objeto enviado al servidor:", orderJSON);
-
     try {
       const res = await services.checkout(orderJSON);
       console.log("Respuesta del servidor:", res);
-      alert("¡Orden enviada con éxito!");
+
+      localStorage.removeItem(this.key); 
+      window.location.href = "success.html";
+
     } catch (err) {
-      console.error("Error al procesar la orden:", err);
+      console.error("Error capturado:", err);
+      
+      this.removeAllAlerts();
+
+      if (err.name === "servicesError") {
+        if (typeof err.message === "object" && err.message !== null) {
+          for (const key in err.message) {
+            const alertText = typeof err.message[key] === "object" 
+              ? JSON.stringify(err.message[key]) 
+              : err.message[key];
+            this.displayAlert(alertText);
+          }
+        } else {
+          this.displayAlert(String(err.message));
+        }
+      } else {
+        this.displayAlert("There was an issue submitting your order.");
+      }
     }
+  }
+
+  displayAlert(message) {
+    const alert = document.createElement("div");
+    alert.classList.add("alert");
+    alert.innerText = message;
+
+    const main = document.querySelector("main");
+    if (main) {
+      main.prepend(alert);
+    }
+  }
+
+  removeAllAlerts() {
+    const alerts = document.querySelectorAll(".alert");
+    alerts.forEach((alert) => alert.remove());
   }
 }
