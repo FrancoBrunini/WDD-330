@@ -1,1 +1,96 @@
-<script src="../js/checkout.js" type="module"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Outside | Checkout</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/checkout.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="divider" id="main-header"></header>
+
+    <main class="divider checkout-container">
+      <h2>Review & Place Your Order</h2>
+
+      <div class="checkout-grid">
+        <form id="checkout-form" class="checkout-form">
+          <fieldset>
+            <legend>Customer Name</legend>
+            <label>
+              First Name
+              <input type="text" name="fname" required />
+            </label>
+            <label>
+              Last Name
+              <input type="text" name="lname" required />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Shipping & Billing Address</legend>
+            <label>
+              Street Address
+              <input type="text" name="street" required />
+            </label>
+            <label>
+              City
+              <input type="text" name="city" required />
+            </label>
+            <label>
+              State
+              <input type="text" name="state" required />
+            </label>
+            <label>
+              Zip Code
+              <input type="text" name="zip" id="zip" required />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Payment Information</legend>
+            <label>
+              Credit Card Number
+              <input type="text" name="cardNumber" pattern="[0-9]{16}" placeholder="1234567890123456" required />
+            </label>
+            <label>
+              Expiration Date (MM/YY)
+              <input type="text" name="expiration" placeholder="MM/YY" required />
+            </label>
+            <label>
+              Security Code (CVV)
+              <input type="text" name="code" pattern="[0-9]{3,4}" placeholder="123" required />
+            </label>
+          </fieldset>
+
+          <button type="submit" id="checkout-submit" class="checkout-btn">Checkout</button>
+        </form>
+
+        <aside class="order-summary">
+          <h3>Order Summary</h3>
+          <ul class="summary-details">
+            <li>
+              <span>Item Subtotal:</span>
+              <span id="summary-subtotal">$0.00</span>
+            </li>
+            <li>
+              <span>Shipping Estimate:</span>
+              <span id="summary-shipping">$0.00</span>
+            </li>
+            <li>
+              <span>Tax (6%):</span>
+              <span id="summary-tax">$0.00</span>
+            </li>
+            <li class="order-total-row">
+              <strong>Order Total:</strong>
+              <strong id="summary-total">$0.00</strong>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+
+    <footer id="main-footer"></footer>
+  </body>
+</html>
