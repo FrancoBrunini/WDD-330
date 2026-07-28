@@ -1,4 +1,4 @@
-import { getLocalStorage } from "./utils.mjs";
+import { getLocalStorage, alertMessage } from "./utils.mjs";
 import ExternalServices from "./ExternalServices.mjs";
 
 const services = new ExternalServices();
@@ -100,44 +100,33 @@ export default class CheckoutProcess {
       const res = await services.checkout(orderJSON);
       console.log("Respuesta del servidor:", res);
 
-      localStorage.removeItem(this.key); 
+      localStorage.removeItem(this.key);
       window.location.href = "success.html";
 
     } catch (err) {
-      console.error("Error capturado:", err);
-      
+      console.error("Error al procesar la orden:", err);
+
       this.removeAllAlerts();
 
       if (err.name === "servicesError") {
         if (typeof err.message === "object" && err.message !== null) {
           for (const key in err.message) {
-            const alertText = typeof err.message[key] === "object" 
-              ? JSON.stringify(err.message[key]) 
+            const msg = typeof err.message[key] === "object"
+              ? JSON.stringify(err.message[key])
               : err.message[key];
-            this.displayAlert(alertText);
+            alertMessage(msg, true);
           }
         } else {
-          this.displayAlert(String(err.message));
+          alertMessage(String(err.message), true);
         }
       } else {
-        this.displayAlert("There was an issue submitting your order.");
+        alertMessage("There was an issue submitting your order.", true);
       }
     }
   }
 
-  displayAlert(message) {
-    const alert = document.createElement("div");
-    alert.classList.add("alert");
-    alert.innerText = message;
-
-    const main = document.querySelector("main");
-    if (main) {
-      main.prepend(alert);
-    }
-  }
-
   removeAllAlerts() {
-    const alerts = document.querySelectorAll(".alert");
+    const alerts = document.querySelectorAll(".alert-message");
     alerts.forEach((alert) => alert.remove());
   }
 }

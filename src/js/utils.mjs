@@ -71,3 +71,28 @@ export async function loadHeaderFooter() {
     console.error("Error cargando header o footer:", error);
   }
 }
+export function alertMessage(message, scroll = true) {
+  const alert = document.createElement("div");
+  alert.classList.add("alert-message");
+
+  alert.innerHTML = `
+    <p>${message}</p>
+    <span class="alert-close">X</span>
+  `;
+
+  alert.addEventListener("click", (e) => {
+    if (e.target.tagName === "SPAN" || e.target.classList.contains("alert-close")) {
+      alert.remove();
+    }
+  });
+
+  const main = document.querySelector("main");
+  if (main) {
+    main.prepend(alert);
+  }
+
+  if (scroll) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+}
+

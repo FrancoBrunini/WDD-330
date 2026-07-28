@@ -1,5 +1,6 @@
 import { getLocalStorage, setLocalStorage } from "./utils.mjs";
-
+import CommentSystem from "./CommentSystem.mjs";
+import { getParam } from "./utils.mjs";
 export default class ProductDetails {
   constructor(productId, dataSource) {
     this.productId = productId;
@@ -84,4 +85,12 @@ export default class ProductDetails {
     document.querySelector("#addToCart").dataset.id =
       this.product.Id;
   }
+}
+
+const productId = getParam("product");
+
+
+if (productId) {
+  const commentSystem = new CommentSystem(productId, "#comments-container");
+  commentSystem.init();
 }
