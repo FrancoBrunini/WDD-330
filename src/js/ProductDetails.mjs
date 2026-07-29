@@ -1,5 +1,5 @@
-import { getLocalStorage, setLocalStorage } from "./utils.mjs";
 import CommentSystem from "./CommentSystem.mjs";
+import { getLocalStorage, setLocalStorage } from "./utils.mjs";
 import { getParam } from "./utils.mjs";
 export default class ProductDetails {
   constructor(productId, dataSource) {
