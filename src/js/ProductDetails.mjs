@@ -1,4 +1,4 @@
-import CommentSystem from "./CommentSystem.mjs";
+import CommentSystem from "./commentsystem.mjs";
 import { getLocalStorage, setLocalStorage } from "./utils.mjs";
 import { getParam } from "./utils.mjs";
 export default class ProductDetails {
