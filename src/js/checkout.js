@@ -5,7 +5,7 @@ loadHeaderFooter();
 
 const checkout = new CheckoutProcess("so-cart", ".order-summary");
 checkout.init();
-
+checkout.calculateOrderTotal();
 const zipInput = document.querySelector("#zip");
 if (zipInput) {
   zipInput.addEventListener("blur", () => {

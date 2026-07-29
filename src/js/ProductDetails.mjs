@@ -12,6 +12,10 @@ export default class ProductDetails {
     this.product = await this.dataSource.findProductById(this.productId);
 
     this.renderProductDetails();
+    if (this.productId) {
+      const commentSystem = new CommentSystem(this.productId, "#comments-container");
+      commentSystem.init();
+    }
 
     const addToCartBtn = document.getElementById("addToCart");
     if (addToCartBtn) {
