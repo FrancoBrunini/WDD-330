@@ -1,4 +1,5 @@
 export default class CommentSystem {
+  
   constructor(productId, selector) {
     this.productId = productId;
     this.container = document.querySelector(selector);
