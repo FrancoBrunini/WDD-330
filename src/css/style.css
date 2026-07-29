@@ -388,3 +388,28 @@ footer {
 .alert-close:hover {
   color: #000;
 }
+
+
+.product-grid img,
+.product-categories img,
+.category-card img,
+.product-list img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.product-grid,
+.product-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.product-categories img,
+.category-card img {
+  width: 120px;
+  height: 120px;
+}
