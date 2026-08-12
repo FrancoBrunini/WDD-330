@@ -1,4 +1,4 @@
-import Cart from "../js/Cart.mjs";
+import Cart from "../js/cart.mjs";
 import { loadHeaderFooter } from "../js/util.mjs";
 
 const cart = new Cart("so-cart", "#cart-list");
