@@ -5,7 +5,7 @@ import{getParam,
   setLocalStorage, 
   formatPrice 
 } from "../js/util.mjs";
-import CommentSystem from "../js/commentsystem.mjs";
+import CommentSystem from "../js/CommentSystem.mjs";
 import ProductData from "../js/ProductData.mjs";
 
 const dataSource = new ProductData();

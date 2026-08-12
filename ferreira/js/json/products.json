@@ -1,109 +1,122 @@
 [
   {
     "id": "1",
-    "name": "Nike Air Zoom Pegasus 40",
-    "brand": "Nike",
-    "price": 130.00,
-    "category": "running",
-    "image": "../images/pegasus40.png",
-    "description": "Zapatillas de running de alto rendimiento con amortiguación reactiva."
+    "name": "Ultraboost Light",
+    "brand": "Adidas",
+    "category": "Running",
+    "price": 190,
+    "FinalPrice": 190,
+    "image": "/WDD-330/ferreira/images/ultraboostlight.png",
+    "description": "Zapatillas de running de alto rendimiento con amortiguación ligera."
   },
   {
     "id": "2",
-    "name": "Adidas Ultraboost Light",
-    "brand": "Adidas",
-    "price": 190.00,
-    "category": "running",
-    "image": "../images/ultraboostlight.png",
-    "description": "Máxima comodidad y retorno de energía para tus entrenamientos diarios."
+    "name": "Pegasus 40",
+    "brand": "Nike",
+    "category": "Running",
+    "price": 130,
+    "FinalPrice": 130,
+    "image": "/WDD-330/ferreira/images/pegasus40.png",
+    "description": "Ajuste personalizado y pisada neutra para tus carreras diarias."
   },
   {
     "id": "3",
-    "name": "Puma Velocity Nitro 2",
+    "name": "Velocity Nitro 2",
     "brand": "Puma",
-    "price": 120.00,
-    "category": "training",
-    "image": "../images/velocitynitro2.png",
-    "description": "Zapatillas versátiles con excelente tracción y diseño ligero."
+    "category": "Running",
+    "price": 120,
+    "FinalPrice": 120,
+    "image": "/WDD-330/ferreira/images/velocitynitro2.png",
+    "description": "Zapatilla de running todo en uno para cualquier distancia."
   },
   {
     "id": "4",
-    "name": "Under Armour Charged Assert 10",
+    "name": "Charged Assert 10",
     "brand": "Under Armour",
-    "price": 75.00,
-    "category": "running",
-    "image": "../images/chargedassert10.png",
-    "description": "Zapatillas duraderas y cómodas con amortiguación Charged Cushioning."
+    "category": "Running",
+    "price": 75,
+    "FinalPrice": 75,
+    "image": "/WDD-330/ferreira/images/chargedassert10.png",
+    "description": "Amortiguación que absorbe el impacto y exterior de malla transpirable."
   },
   {
     "id": "5",
-    "name": "Reebok Nano X3",
+    "name": "Nano X3",
     "brand": "Reebok",
-    "price": 140.00,
-    "category": "training",
-    "image": "../images/nanox3.png",
-    "description": "Calzado de entrenamiento cruzado diseñado para entrenamientos intensos en gimnasio."
-  },{
-   "id": "6",
-    "name": "Nike structure 26",
+    "category": "Training",
+    "price": 140,
+    "FinalPrice": 140,
+    "image": "/WDD-330/ferreira/images/nanox3.png",
+    "description": "Estabilidad superior para entrenamientos intensos y CrossFit."
+  },
+  {
+    "id": "6",
+    "name": "Metcon 9",
     "brand": "Nike",
-    "price": 35.00,
-    "category": "running",
-    "image": "../images/structure26.png",
-    "description": "Shoes with an excellent stability feature."
+    "category": "Training",
+    "price": 150,
+    "FinalPrice": 150,
+    "image": "/WDD-330/ferreira/images/metcon9.png",
+    "description": "Placa Hyperlift más grande y agarre de goma mejorado para levantamiento de pesas."
   },
   {
     "id": "7",
-    "name": "Asics Gel-Nimbus 25",
-    "brand": "Asics",
-    "price": 160.00,
-    "category": "running",
-    "image": "../images/gelnimbus25.png",
-    "description": "Plush cushioning for long distance running."
+    "name": "Dropset 2",
+    "brand": "Adidas",
+    "category": "Training",
+    "price": 130,
+    "FinalPrice": 130,
+    "image": "/WDD-330/ferreira/images/dropset2.png",
+    "description": "Diseñadas para aportar fuerza y estabilidad en tus sesiones de fuerza."
   },
   {
     "id": "8",
-    "name": "Nike Metcon 9",
-    "brand": "Nike",
-    "price": 150.00,
-    "category": "training",
-    "image": "../images/metcon9.png",
-    "description": "The gold standard for cross-training and lifting."
+    "name": "TriBase Reign 5",
+    "brand": "Under Armour",
+    "category": "Training",
+    "price": 130,
+    "FinalPrice": 130,
+    "image": "/WDD-330/ferreira/images/tribasereign5.png",
+    "description": "Maximiza el contacto con el suelo para un control total."
   },
   {
     "id": "9",
-    "name": "Adidas Dropset 2",
-    "brand": "Adidas",
-    "price": 130.00,
-    "category": "training",
-    "image": "../images/dropset2.png",
-    "description": "Stable base for heavy lifting and gym workouts."
+    "name": "GEL-Nimbus 25",
+    "brand": "Asics",
+    "category": "Running",
+    "price": 160,
+    "FinalPrice": 160,
+    "image": "/WDD-330/ferreira/images/gelnimbus25.png",
+    "description": "Máximo confort y amortiguación suave para rodajes largos."
   },
   {
     "id": "10",
-    "name": "Brooks Ghost 15",
+    "name": "Ghost 15",
     "brand": "Brooks",
-    "price": 140.00,
-    "category": "running",
-    "image": "../images/ghost15.png",
-    "description": "Smooth transitions and reliable cushioning."
+    "category": "Running",
+    "price": 140,
+    "FinalPrice": 140,
+    "image": "/WDD-330/ferreira/images/ghost15.png",
+    "description": "Transiciones suaves y amortiguación DNA LOFT v2."
   },
   {
     "id": "11",
-    "name": "Under Armour TriBase Reign 5",
-    "brand": "Under Armour",
-    "price": 130.00,
-    "category": "training",
-    "image": "../images/tribasereign5.png",
-    "description": "Maximize ground contact and flexibility during workouts."
+    "name": "Fuse 2",
+    "brand": "Puma",
+    "category": "Training",
+    "price": 100,
+    "FinalPrice": 100,
+    "image": "/WDD-330/ferreira/images/fuse2.png",
+    "description": "Tracción versátil y durabilidad para entrenamiento funcional."
   },
   {
     "id": "12",
-    "name": "Puma Fuse 2.0",
-    "brand": "Puma",
-    "price": 110.00,
-    "category": "training",
-    "image": "../images/fuse2.png",
-    "description": "Durable and stable design for strength training."
+    "name": "Structure 26",
+    "brand": "Nike",
+    "category": "Running",
+    "price": 140,
+    "FinalPrice": 140,
+    "image": "/WDD-330/ferreira/images/structure26.png",
+    "description": "Soporte para pronadores y pisada estable en cada km."
   }
 ]
