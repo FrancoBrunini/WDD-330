@@ -1,5 +1,5 @@
 import { loadHeaderFooter } from "../js/util.mjs";
-import CheckoutProcess from "../js/CheckoutProcess.mjs";
+import CheckoutProcess from "../js/checkoutprocess.mjs";
 
 const myCheckout = new CheckoutProcess("so-cart", "#order-summary");
 
@@ -10,6 +10,7 @@ async function init() {
   });
 
   myCheckout.init();
+  
   
   myCheckout.calculateOrderTotal();
 

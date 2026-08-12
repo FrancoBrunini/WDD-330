@@ -6,7 +6,7 @@
     "category": "Running",
     "price": 190,
     "FinalPrice": 190,
-    "image": "/WDD-330/ferreira/images/ultraboostlight.png",
+    "image": "/WDD-330/ferreira/images/UltraboostLight.png",
     "description": "High-performance running shoes with lightweight cushioning."
   },
   {
@@ -16,7 +16,7 @@
     "category": "Running",
     "price": 130,
     "FinalPrice": 130,
-    "image": "/WDD-330/ferreira/images/pegasus40.png",
+    "image": "/WDD-330/ferreira/images/Pegasus40.png",
     "description": "Personalized fit and neutral stride for your daily runs."
   },
   {
@@ -26,7 +26,7 @@
     "category": "Running",
     "price": 120,
     "FinalPrice": 120,
-    "image": "/WDD-330/ferreira/images/velocitynitro2.png",
+    "image": "/WDD-330/ferreira/images/VelocityNitro2.png",
     "description": "All-in-one running shoe for any distance."
   },
   {
