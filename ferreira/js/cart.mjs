@@ -161,7 +161,7 @@ export default class Cart {
     const COUPONS = {
       "FERREIRA10": 0.10,
       "FERREIRA20": 0.20,
-      "DESCUENTO15": 0.15
+      "DISCOUNT15": 0.15
     };
 
     const applyBtn = document.getElementById("apply-coupon-btn");
