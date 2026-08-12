@@ -1,7 +1,7 @@
+import Cart from "./cart.mjs";
 import ProductData from "./ProductData.mjs";
 import ProductList from "./ProductList.mjs";
 import { loadHeaderFooter } from "./util.mjs";
-import Cart from "./Cart.mjs";
 
 const dataSource = new ProductData();
 const element = document.getElementById("product-list");
