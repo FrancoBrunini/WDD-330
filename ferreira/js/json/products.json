@@ -7,7 +7,7 @@
     "price": 190,
     "FinalPrice": 190,
     "image": "/WDD-330/ferreira/images/ultraboostlight.png",
-    "description": "Zapatillas de running de alto rendimiento con amortiguación ligera."
+    "description": "High-performance running shoes with lightweight cushioning."
   },
   {
     "id": "2",
@@ -17,7 +17,7 @@
     "price": 130,
     "FinalPrice": 130,
     "image": "/WDD-330/ferreira/images/pegasus40.png",
-    "description": "Ajuste personalizado y pisada neutra para tus carreras diarias."
+    "description": "Personalized fit and neutral stride for your daily runs."
   },
   {
     "id": "3",
@@ -27,7 +27,7 @@
     "price": 120,
     "FinalPrice": 120,
     "image": "/WDD-330/ferreira/images/velocitynitro2.png",
-    "description": "Zapatilla de running todo en uno para cualquier distancia."
+    "description": "All-in-one running shoe for any distance."
   },
   {
     "id": "4",
@@ -37,7 +37,7 @@
     "price": 75,
     "FinalPrice": 75,
     "image": "/WDD-330/ferreira/images/chargedassert10.png",
-    "description": "Amortiguación que absorbe el impacto y exterior de malla transpirable."
+    "description": "Impact-absorbing cushioning and breathable mesh upper."
   },
   {
     "id": "5",
@@ -47,7 +47,7 @@
     "price": 140,
     "FinalPrice": 140,
     "image": "/WDD-330/ferreira/images/nanox3.png",
-    "description": "Estabilidad superior para entrenamientos intensos y CrossFit."
+    "description": "Superior stability for intense workouts and CrossFit."
   },
   {
     "id": "6",
@@ -57,7 +57,7 @@
     "price": 150,
     "FinalPrice": 150,
     "image": "/WDD-330/ferreira/images/metcon9.png",
-    "description": "Placa Hyperlift más grande y agarre de goma mejorado para levantamiento de pesas."
+    "description": "Larger Hyperlift plate and enhanced rubber wrap for weightlifting."
   },
   {
     "id": "7",
@@ -67,7 +67,7 @@
     "price": 130,
     "FinalPrice": 130,
     "image": "/WDD-330/ferreira/images/dropset2.png",
-    "description": "Diseñadas para aportar fuerza y estabilidad en tus sesiones de fuerza."
+    "description": "Designed to build strength and stability during your strength sessions."
   },
   {
     "id": "8",
@@ -77,7 +77,7 @@
     "price": 130,
     "FinalPrice": 130,
     "image": "/WDD-330/ferreira/images/tribasereign5.png",
-    "description": "Maximiza el contacto con el suelo para un control total."
+    "description": "Maximizes ground contact for total control."
   },
   {
     "id": "9",
@@ -87,7 +87,7 @@
     "price": 160,
     "FinalPrice": 160,
     "image": "/WDD-330/ferreira/images/gelnimbus25.png",
-    "description": "Máximo confort y amortiguación suave para rodajes largos."
+    "description": "Maximum comfort and soft cushioning for long runs."
   },
   {
     "id": "10",
@@ -97,7 +97,7 @@
     "price": 140,
     "FinalPrice": 140,
     "image": "/WDD-330/ferreira/images/ghost15.png",
-    "description": "Transiciones suaves y amortiguación DNA LOFT v2."
+    "description": "Smooth transitions and DNA LOFT v2 cushioning."
   },
   {
     "id": "11",
@@ -107,7 +107,7 @@
     "price": 100,
     "FinalPrice": 100,
     "image": "/WDD-330/ferreira/images/fuse2.png",
-    "description": "Tracción versátil y durabilidad para entrenamiento funcional."
+    "description": "Versatile traction and durability for functional training."
   },
   {
     "id": "12",
@@ -117,6 +117,6 @@
     "price": 140,
     "FinalPrice": 140,
     "image": "/WDD-330/ferreira/images/structure26.png",
-    "description": "Soporte para pronadores y pisada estable en cada km."
+    "description": "Support for overpronators and a stable ride every mile."
   }
 ]
