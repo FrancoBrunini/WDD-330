@@ -1,10 +1,8 @@
 import { getLocalStorage, renderListWithTemplate } from "./utils.mjs";
 
-// Función plantilla para un solo item del carrito
 function cartItemTemplate(item) {
   const quantity = item.Quantity || 1;
-  const image = item.Images?.PrimaryMedium || item.Image; // fallback para imágenes
-
+  const image = item.Images?.PrimaryMedium || item.Image; 
   return `<li class="cart-card divider">
     <a href="#" class="cart-card__image">
       <img

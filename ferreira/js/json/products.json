@@ -1,0 +1,109 @@
+[
+  {
+    "id": "1",
+    "name": "Nike Air Zoom Pegasus 40",
+    "brand": "Nike",
+    "price": 130.00,
+    "category": "running",
+    "image": "../images/pegasus40.png",
+    "description": "Zapatillas de running de alto rendimiento con amortiguación reactiva."
+  },
+  {
+    "id": "2",
+    "name": "Adidas Ultraboost Light",
+    "brand": "Adidas",
+    "price": 190.00,
+    "category": "running",
+    "image": "../images/ultraboostlight.png",
+    "description": "Máxima comodidad y retorno de energía para tus entrenamientos diarios."
+  },
+  {
+    "id": "3",
+    "name": "Puma Velocity Nitro 2",
+    "brand": "Puma",
+    "price": 120.00,
+    "category": "training",
+    "image": "../images/velocitynitro2.png",
+    "description": "Zapatillas versátiles con excelente tracción y diseño ligero."
+  },
+  {
+    "id": "4",
+    "name": "Under Armour Charged Assert 10",
+    "brand": "Under Armour",
+    "price": 75.00,
+    "category": "running",
+    "image": "../images/chargedassert10.png",
+    "description": "Zapatillas duraderas y cómodas con amortiguación Charged Cushioning."
+  },
+  {
+    "id": "5",
+    "name": "Reebok Nano X3",
+    "brand": "Reebok",
+    "price": 140.00,
+    "category": "training",
+    "image": "../images/nanox3.png",
+    "description": "Calzado de entrenamiento cruzado diseñado para entrenamientos intensos en gimnasio."
+  },{
+   "id": "6",
+    "name": "Nike structure 26",
+    "brand": "Nike",
+    "price": 35.00,
+    "category": "running",
+    "image": "../images/structure26.png",
+    "description": "Shoes with an excellent stability feature."
+  },
+  {
+    "id": "7",
+    "name": "Asics Gel-Nimbus 25",
+    "brand": "Asics",
+    "price": 160.00,
+    "category": "running",
+    "image": "../images/gelnimbus25.png",
+    "description": "Plush cushioning for long distance running."
+  },
+  {
+    "id": "8",
+    "name": "Nike Metcon 9",
+    "brand": "Nike",
+    "price": 150.00,
+    "category": "training",
+    "image": "../images/metcon9.png",
+    "description": "The gold standard for cross-training and lifting."
+  },
+  {
+    "id": "9",
+    "name": "Adidas Dropset 2",
+    "brand": "Adidas",
+    "price": 130.00,
+    "category": "training",
+    "image": "../images/dropset2.png",
+    "description": "Stable base for heavy lifting and gym workouts."
+  },
+  {
+    "id": "10",
+    "name": "Brooks Ghost 15",
+    "brand": "Brooks",
+    "price": 140.00,
+    "category": "running",
+    "image": "../images/ghost15.png",
+    "description": "Smooth transitions and reliable cushioning."
+  },
+  {
+    "id": "11",
+    "name": "Under Armour TriBase Reign 5",
+    "brand": "Under Armour",
+    "price": 130.00,
+    "category": "training",
+    "image": "../images/tribasereign5.png",
+    "description": "Maximize ground contact and flexibility during workouts."
+  },
+  {
+    "id": "12",
+    "name": "Puma Fuse 2.0",
+    "brand": "Puma",
+    "price": 110.00,
+    "category": "training",
+    "image": "../images/fuse2.png",
+    "description": "Durable and stable design for strength training."
+  }
+]
