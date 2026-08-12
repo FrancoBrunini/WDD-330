@@ -2,7 +2,7 @@ import { getLocalStorage, setLocalStorage, alertMessage } from "./util.mjs";
 import { formatPrice } from "./util.mjs";
 
 function productCardTemplate(product, currentCurrency = "USD", rates = {}) {
-  const productUrl = `/product-list/index.html?product=${product.id || product.Id}`;
+const productUrl = `/WDD-330/ferreira/product-list/index.html?product=${product.id || product.Id}`;
   const usdPrice = Number(product.FinalPrice || product.price || product.ListPrice || 0);
   const formattedPrice = formatPrice(usdPrice, currentCurrency, rates);
 

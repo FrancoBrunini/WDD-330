@@ -10,7 +10,7 @@ function convertToJson(res) {
 
 export default class ProductData {
   constructor() {
-this.path = "./js/json/products.json";  }
+this.path = "/WDD-330/ferreira/js/json/products.json";}
 
   async getData() {
     const response = await fetch(this.path);
